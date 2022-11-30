@@ -1,0 +1,22 @@
+#someone else's code on 3rd line to hide player input. this is done in python as a learning project. brand new coder. don't hate :
+
+from getpass import getpass as input
+p1c = input("Player 1 do you choose r,p, or s?")
+p2c = input("Player 2 do you choose r,p, or s?")  
+if p1c == p2c:
+  print("Draw! Play again!")
+else:
+  if p1c == "r" and p2c == "s":
+    print("Player 1 wins with Rock!")
+  elif p1c == "r" and p2c == "p":
+    print("Player 2 wins with Paper!")
+  else:
+    if p1c == "p" and p2c == "r":
+      print("Player 1 wins with Paper!")
+    elif p1c == "p" and p2c == "s":
+      print("Player 2 wins with Scissors!")
+    else:
+      if p1c == "s" and p2c == "p":
+        print("Player 1 wins with Scissors!")
+      elif p1c == "s" and p2c == "r":
+        print("Player 2 wins with Rock!")
