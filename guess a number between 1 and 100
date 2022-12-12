@@ -1,0 +1,13 @@
+print("Welcome to guess the number! The number is between 1 and 100.")
+while True:
+  guess = int(input("What is your guess?>"))
+  if guess == 8:
+    print("You win!")
+    break
+  elif guess > 8:
+    print("Your guess is too high!")
+    continue
+  elif guess < 8:
+    print("Your guess is too low!")
+    continue
+    
