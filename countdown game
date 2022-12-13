@@ -1,0 +1,14 @@
+print("Do you want to play the countdown game?")
+answer = input("yes or no?:")
+if answer != "yes":
+  print("Lame! Until next time, goodbye!")
+  exit()
+elif answer == "yes":
+  s = int(input("What number should we start at?:"))
+  ea = int(input("What number should we end at?:"))
+  ea=ea+1
+  #remember that the 2nd part of the range is "end before" and not end at. So if they say at 0 the computer would have stopped at 1 so I addded 1 to actually finish where the user wanted.
+  i = int(input("What should we count down by?:"))
+  for j in range(s,-ea,-i):
+    print(j)
+  
