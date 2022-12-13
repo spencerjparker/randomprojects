@@ -1,5 +1,6 @@
-#this example is starting with 1000 dollars at 5% for 10 years
 s = 1000
 for t in range(10):
   s += s*.05
   print(s)
+total= s-1000
+print(round (total,2))
